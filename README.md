@@ -1,24 +1,16 @@
-# README
+# Setting up a rails app for VueJs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Install webpacker:
 
-Things you may want to cover:
+```
+gem 'webpacker', '~> 5.x'
+bundle install
+bundle exec rails webpacker:install
+```
 
-* Ruby version
+Install Vue:
 
-* System dependencies
+```
+bundle exec rails webpacker:install:vue
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
