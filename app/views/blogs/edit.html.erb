@@ -1,5 +1,4 @@
-<h1>New Blog</h1>
+<div data-props="<%= {blog_id: @blog.id, title: @blog.title }.to_json %>" id="blogs-edit-view"></div>
 
-<%= render 'form', blog: @blog %>
-
-<%= link_to 'Back', blogs_path %>
+<%= stylesheet_pack_tag 'blogs/edit' %>
+<%= javascript_pack_tag 'blogs/edit' %>
